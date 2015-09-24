@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="" data-ng-app="GoogleDirection">
+<head>
+  <meta t="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=weather"">
+</script>
+<script type="text/javascript">
+function getstoragevalue()
+{
+	 document.getElementById("result").innerHTML="Welcome "+localStorage.getItem("name");
+	}
+</script>
+  <link rel="stylesheet" href="style.css">  
+    
+ </head>
+<body BGCOLOR="#916f6f" TEXT="#80c0c0" LINK="#ff8080" onload="getstoragevalue()">
+<center>
+<div id="wrap">
+<div id="header">
+<h1><a href="#">Stocks</a></h1>
+</div>
+<div id="result" right></div>
+<div id="top"> </div>
+<div align=center>
+   <h3> <b>IBM Stock</b></h3>
+    <br> <img src="http://chart.finance.yahoo.com/z?s=ibm&t=3m&q=l&z=l&p=m50,m200" width=600 height=400>
+</div>
+<div align="center">
+  <h3><b>IBM stock in last 5 years</b></h3> <br>
+   <img src="https://chart.googleapis.com/chart?cht=lc&chd=t:150,250,60,80,50,20,40,20,10,10&chs=600x400" width=600 height=400>
+</div>
+<div>
+        Tweet about IBM <a href="https://twitter.com/intent/tweet?screen_name=ibm" class="twitter-mention-button" data-lang="en">@ibm</a> 
+</div>
+</div>
+</center>
+    </body>
+</html>
+<script>

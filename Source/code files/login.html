@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script>
+function validateForm(){
+	 var x = document.forms["loginform"]["uname"].value;
+	 var y = document.forms["loginform"]["password"].value;
+		 localStorage.setItem("name",document.forms["loginform"]["uname"].value);
+	 	    return true;		
+}
+</script>
+</head>
+<body BGCOLOR="#b16a6a" TEXT="#80c0c0" LINK="#ff8080">
+<center>
+<div id="wrap">
+
+<div id="header">
+<h1><a href="#">Login</a></h1>
+</div>
+
+<div id="top"> </div>
+
+<form name="loginform" action="home1_Mashup.html" onsubmit="return validateForm()" method=post>
+
+<br>
+Username:
+<input type=text name=uname>
+<br>
+Password:
+<input type=password name=password>
+<br>
+<center><input type=submit value=Submit></center>
+    <br>
+    <center><input type="button" value="Register" onclick="location='reg.html'"></center>
+</form>
+</div>
+</center>
+
+</body>
+</html>
