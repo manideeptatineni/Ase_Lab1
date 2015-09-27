@@ -12,6 +12,7 @@ function validateForm(){
 </script>
 </head>
 <body BGCOLOR="#b16a6a" TEXT="#80c0c0" LINK="#ff8080">
+    
 <center>
 <div id="wrap">
 
@@ -21,7 +22,7 @@ function validateForm(){
 
 <div id="top"> </div>
 
-<form name="loginform" action="home1_Mashup.html" onsubmit="return validateForm()" method=post>
+<form name="loginform" action="Mashup2.html" onsubmit="return validateForm()" method=post>
 
 <br>
 Username:
@@ -34,7 +35,17 @@ Password:
     <br>
     <center><input type="button" value="Register" onclick="location='reg.html'"></center>
 </form>
+    
+    
 </div>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=947928601946069";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </center>
 
 </body>
